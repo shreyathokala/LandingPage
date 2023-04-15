@@ -1,180 +1,76 @@
-# LandingPage
-*{  margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 18px;
-}
+<html lang="en">
 
-body{
-    background-image: url("bg1.jpg") ;
-    height: 100vh;
-    background-position: center center;
-    background-size: 100% auto;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 18px;
-    box-sizing: border-box;
-}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="LandingPage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <title>My Landing Page:</title>
+</head>
 
-.nav1{
-    width: 100%;
-    height: 40px;
-    color:rgb(255, 255, 255);
-    background-color: rgb(255,255,255);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    border-radius: 8px;
-    position: sticky;
-}
+<body>
+    <header class="head1">
+        <nav class="nav1">
+            <div class="logo">
+                <img id="logo" src="C:\Users\HP\Pictures\logo.jpg" alt="Image is Not Available" title="My Logo">
+            </div>
+            <div class="menu">
 
-#logo{
-    width: 120px;
-    height: 40px;
-    margin: 0 ;
-}
+                <a href="#" id="tb1" class="tab">Home</a> 
+                <a href="#" class="tab">About</a>
+                <a href="#" class="tab">Services</a>
+                <a href="#" class="tab">Job Seekers</a>
 
-.menu{
-    text-decoration: none;
-    color: darkblue;
-    background-color: rgb(255, 255, 255);
-    padding: 0 20px;
-    justify-content: space-around;
-}
+            </div>
+            <div class="network">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-google"></i>
+                <i class="fa fa-twitter"></i>
+                <!-- <a href="#">SignUp</a>
+                <a href="#">SignIn</a> -->
+            </div>
+        </nav>
+    </header>
 
-.tab{
-    width: 70px;
-    text-align: center;
-    padding: 0 30px;
-    text-decoration: none;
-    justify-content: space-around;
-    border-radius: 6px;
-    font-size: 18px;
-}
-
-#tb1{
-    background-color: rgb(180, 180, 245);
-    border-radius: 6px;
-    color:orange;
-}
-
-
-.tab:hover{
-    background-color: rgb(180, 180, 245);
-    color: orange;
-}
-
-
-.nav1 i{
-    cursor: pointer;
-    margin:0 8px;
-    width: 20px;
-    height: 20;
-    color: rgb(4, 135, 241);
-    background-color: rgb(255,255,255);
-    padding: 2px 2px;
-}
-
-.form{
+    <div class="content">
+        <h3 class="Subheading">CANDIDATE DEVELOPMENT</h3>
+        <p class="para1">Result oriented training programs for job seekers and employees.</p>
+        <p class="para2">Our training programs and campaigns are designed around specific professional development
+            areas and are delivered to fit industry demands. Our training has been developed for individuals who
+            need immediate skills development in key areas. Our aim is to maximize your learning and transferability
+            of skills back to the workplace, while minimizing time off the job.</p>
+    </div>
+    <div class="form">
+        <h3>Upload Your Resume</h3>
+        <span>Full Name :<input type="text" placeholder="Enter your Full Name" /> </span>
+        <span>Job profile :<input type="text" placeholder="Enter your Job Profile" /> </span>
+        <span>Experience :<input type="number" /> </span>
+        <span>Qualification :<input list="Class" />
+            <datalist id="Class">
+                <option> PHD </option>
+                <option> Masters </option>
+                <option> Bachelor </option>
+                <option> HSC </option>
+                <option> 10th or Below </option>
+            </datalist> </span>
+        <span>UPLOAD RESUME <input type="file" /> </span>
+        <span> <input class="btn" id="b2" type="Reset" value="RESET FORM" /> </span>
+        <span> <input class="btn" id="b1" type="submit" value="SUBMIT RESUME" />  </span>
+    </div>
     
-    padding: 5px 10px;
-    border:3px solid rgb(50, 205, 140);
-    border-radius: 6px;
-    background-color:rgb(216, 231, 250) ;
-    width: 400px;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 12px;
-    margin-left: 30px;
-    margin-top: 18px;
-    box-shadow: 8px solid rgb(4, 253, 191);
-}
+    <footer>
+        <nav class="nav2">
+            <div>
+                <p>
+                    <span>Contact Us</span> Address:- Sigma HR Solutions,Wagholi Pune.
+                    Phone No:- 7234567890
+                </p>
+            </div>
+    </footer>
+</body>
 
-.form h3{
-    text-transform:uppercase ;
-    text-align: center;
-    font-size: large;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    margin: 3px 5px;
-    padding: 2px 2px;
-}
-
-.form span{
-     display: block; 
-     padding: 2px 2px;
-     margin: 3px 5px;
-     text-align: center;
-     
-}
-
-.form input{
-    margin: 3px 10px;
-}
-
-.btn{
-    width: 350px;
-    height: 25px;
-    margin: 2px 5px;
-    padding: 2px 5px ;
-    text-align: center;
-    align-items: center;
-    background-color: rgb(0, 68, 255);
-    border-radius: 6px;
-}
-
-
-
-.nav2{
-    text-align: center;
-    font-size: 9px;
-    font-family: fantasy;
-    background-color: rgb(12, 12, 12);
-    border: 2px solid gray;
-    box-sizing: border-box;
-    border-radius: 6px;
-    height: 30px;
-    justify-content: space-between;
-    padding: 5px 10px;
-    margin: 3px 3px;
-}
-
-.nav2 span{
-    margin: 3px 30px;
-    font-family: sans-serif;
-    color: tomato;
-}
-
-.nav2 p{
-    color: white;
-}
-
-.content{
-    color: white;
-    margin-left: 40px;
-    margin-right:40px;
-    margin-top:30px ;
-    text-align: center;
-    /* border: 2px solid red; */
-    display:block;
-    width: 400px;
-    float: right;
-    padding: 5px 5px;
-}
-
-.content h3{
-    margin:10px 5px;
-}
-
-.content p{
-    font-size:12px;
-    font-family: sans-serif;
-    margin: 2px 5px;
-}
-
-.para1{
-    text-align: center;
-    font-size:10px;
-    font-family: sans-serif;
-    margin:8px 5px;
-    color: rgb(243, 189, 89);
-}
+</html>
